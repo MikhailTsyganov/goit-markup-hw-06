@@ -384,6 +384,25 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="subscribe">
+                <p class="join">Подпишитесь на рассылку</p>
+                <form action="">
+                    <div class="form-sub">
+                        <input type="email" name="email-sub" id="email-sub" class="form-input">
+                        <label for="email-sub" class="label-sub">E-mail</label>
+                    </div>
+                    <button type="submit" class="btn-sub">
+                        <div class="sub-container">
+                            <p class="text">Подписаться</p>
+                            <svg class="icon" width="24px" height="24px">
+                                <use href="/images/icons.svg#icon-send"></use>
+                            </svg>
+                        </div>
+                    </button>
+                </form>
+
+            </div>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -398,7 +417,7 @@
             <form action="" class="form">
                 <div class="form-field">
                     <label for="name" class="form-label">Имя</label>
-                    <input type="name" id="name" class="form-input">
+                    <input type="name" name="name" id="name" class="form-input">
                     <svg class="icon" width="18px" height="18px">
                         <use href="./images/icons.svg#icon-form-name"></use>
                     </svg>
@@ -406,7 +425,7 @@
                 
                 <div class="form-field">
                     <label for="tel" class="form-label">Телефон</label>
-                    <input type="tel" id="tel" class="form-input">
+                    <input type="tel" name="tel" id="tel" class="form-input">
                     <svg class="icon" width="18px" height="18px">
                         <use href="./images/icons.svg#icon-form-tel"></use>
                     </svg>
@@ -414,7 +433,7 @@
                 
                 <div class="form-field">
                     <label for="email" class="form-label">Почта</label>
-                    <input type="email" id="email" class="form-input">
+                    <input type="email" name="email" id="email" class="form-input">
                     <svg class="icon" width="18px" height="18px">
                         <use href="./images/icons.svg#icon-form-email"></use>
                     </svg>
@@ -427,7 +446,7 @@
 
                 <div class="checkbox-container">
                     <label class="label-check">
-                        <input type="checkbox" value="" class="form-check">
+                        <input type="checkbox" name="checkbox" class="form-check">
                         <div class="checkbox-icon">
                             <svg class="check-icon" height="100%";>
                                 <use href="./images/icons.svg#icon-form-check"></use>

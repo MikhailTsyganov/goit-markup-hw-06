@@ -17,6 +17,7 @@
   --input-border-color: rgba(33, 33, 33, 0.2);
   --submit-color: #188ce8;
   --placeholder-color: rgba(117, 117, 117, 0.5);
+  --input-sub-border-color: rgba(255, 255, 255, 0.3);
 }
 
 body {
@@ -565,6 +566,10 @@ body {
   display: flex;
 }
 
+.join-us {
+  margin-right: 93px;
+}
+
 .join-us .social-icon {
   width: 44px;
   height: 44px;
@@ -592,13 +597,73 @@ body {
   fill: var(--primary-white-color);
 }
 
+.subscribe .form-sub {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.subscribe .form-input {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+
+  border: 1px solid var(--input-sub-border-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: inherit;
+  outline: none;
+}
+
+.subscribe .form-input:focus + .label-sub {
+  opacity: 0;
+}
+
+.subscribe .label-sub {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe .btn-sub {
+  display: inline-block;
+  min-width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  text-align: center;
+  background-color: var(--accent);
+  color: var(--primary-white-color);
+}
+
+.subscribe .sub-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe .text {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+
 /* Button */
 
 .button {
   display: inline-block;
   border-radius: 4px;
   border: 1px solid transparent;
-  padding: 10px 32px;
   min-width: 200px;
 
   color: var(--title-text-color);
